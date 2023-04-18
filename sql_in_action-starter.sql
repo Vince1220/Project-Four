@@ -44,7 +44,7 @@ from final_airbnb;
 -- HINT: Aggregates are more than just big rocks...
 
 -- EXPECTED OUTPUT: 165.3904
-select avg(availibility_365) from final_airbnb;
+select avg(availability_365) from final_airbnb;
 
 -- <<<<<<<<<<<<<<<<<<<<<< PROBLEM 6 >>>>>>>>>>>>>>>>>>>>>>>
 -- Find all listings that do NOT have a review
@@ -114,4 +114,4 @@ limit 1;
 -- HINT: No hints! It's a bonus for a reason :)
 select id, price, avg(price), price / avg(price) * 100-100 percent_above_or_below_avg_price
 from final_airbnb
-order by percent_above_or_below_average_price desc;
+order by percent_above_or_below_avg_price desc;
