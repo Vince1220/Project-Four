@@ -112,6 +112,6 @@ limit 1;
 -- <<<<<<<<<<<<<<<<<<<<< ** BONUS ** >>>>>>>>>>>>>>>>>>>>>>>
 -- Find the the percent above or below each listing is compared to the average price for all listings.
 -- HINT: No hints! It's a bonus for a reason :)
-select id, price, avg(price), price / avg(price) * 100-100 percent_above_or_below_avg_price
+select id, price, avg(price), price / avg(price) * 100 -100 percent_above_or_below_avg_price
 from final_airbnb
-order by percent_above_or_below_avg_price desc;
+order by percent_above_or_below_avg_price asc;
